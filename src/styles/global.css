@@ -1,0 +1,60 @@
+/* Default - Start */
+:root {
+  --background: #F0F0F7;
+  --white: #f5f5f5;
+  --text: #858585;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+/* Default - End */
+/* Topbar - Start */
+.topbar{
+  width: 100%;
+  height: 4.5rem;
+  background: var(--white);
+  margin-bottom: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.6rem;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0px 2px 15px rgba(12, 12, 12, 0.25);
+}
+
+/* Topbar - End */
+/* Help - Start */
+.help{
+  position: fixed;
+  bottom: 1.2rem;
+  right: 2rem;
+  color: var(--text);
+  font-size: 2.4rem;
+}
+
+/* Help - End */
+/* Editor Edit - Start */
+
+.ce-block__content {
+  background: rgb(250, 250, 250);
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}

@@ -22,7 +22,7 @@ const editor = new EditorJS({
       class: Header,
       shortcut: 'CTRL+SHIFT+H',
       config: {
-        placeholder: 'Este é um cabeçalho',
+        placeholder: 'Seu título...',
         levels: [2, 3, 4],
         defaultLevel: 2
       }
@@ -90,7 +90,7 @@ const editor = new EditorJS({
       },
       toolNames: {
         "Text": "Texto",
-        "Heading": "Cabeçalho",
+        "Heading": "Título",
         "List": "Lista",
         "Checklist": "Checklist",
         "Quote": "Citação",
@@ -127,7 +127,20 @@ const editor = new EditorJS({
 
 function App() {
   return (
-    <div id="editorjs"></div>
+    <div>
+      <div className="topbar">
+        <div className="left">Editor</div>
+        <div className="center"></div>
+        <div className="right">
+          <a href="#"><i className="far fa-save"></i> Salvar |</a>
+          <a href="#"> Publicar <i className="far fa-paper-plane"></i></a>
+        </div>
+      </div>
+
+      <div id="editorjs"></div>
+
+      <div className="help"><i className="fas fa-question-circle"></i></div>
+    </div>
   );
 }
 
