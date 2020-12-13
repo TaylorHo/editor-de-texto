@@ -2,6 +2,7 @@
 
 É contruído com [ReactJS](https://reactjs.org/) para que seja possível criar uma **build de produção**.
 Desse modo, é só rodar o comando ***yarn build*** para gerar o editor, e usá-lo em serviores de conteúdo estático (facilita a integração com servidores Apache e uso com o PHP).
+**Importante:** O projeto está configurado para usar o Português (Brasil) como língua principal.
 
 ### Costrução
 
