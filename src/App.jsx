@@ -11,15 +11,16 @@ import Delimiter from '@editorjs/delimiter';
 import Marker from '@editorjs/marker';
 import CodeTool from '@editorjs/code';
 import InlineCode from '@editorjs/inline-code';
+import DragDrop from 'editorjs-drag-drop';
 
 const editor = new EditorJS({
   holder: 'editorjs',
-  placeholder: 'Você pode começar a escrever ou escolher um bloco...',
+  placeholder: 'Você pode escrever ou escolher um bloco...',
 
   tools: {
     header: {
       class: Header,
-      shortcut: 'CMD+SHIFT+H',
+      shortcut: 'CTRL+SHIFT+H',
       config: {
         placeholder: 'Este é um cabeçalho',
         levels: [2, 3, 4],
@@ -42,7 +43,7 @@ const editor = new EditorJS({
     quote: {
       class: Quote,
       inlineToolbar: true,
-      shortcut: 'CMD+SHIFT+O',
+      shortcut: 'CTRL+SHIFT+O',
       config: {
         quotePlaceholder: 'Adicione uma citação',
         captionPlaceholder: 'Autor da citação',
@@ -51,7 +52,7 @@ const editor = new EditorJS({
     delimiter: Delimiter,
     Marker: {
       class: Marker,
-      shortcut: 'CMD+SHIFT+M',
+      shortcut: 'CTRL+SHIFT+M',
     },
     code: {
       class: CodeTool,
@@ -61,7 +62,7 @@ const editor = new EditorJS({
     },
     inlineCode: {
       class: InlineCode,
-      shortcut: 'CMD+SHIFT+M',
+      shortcut: 'CTRL+SHIFT+X',
     },
   },
 
@@ -117,6 +118,10 @@ const editor = new EditorJS({
         }
       },
     }
+  },
+
+  onReady: () => {
+    new DragDrop(editor);
   },
 });
 
