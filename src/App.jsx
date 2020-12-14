@@ -15,7 +15,7 @@ import DragDrop from 'editorjs-drag-drop';
 
 const editor = new EditorJS({
   holder: 'editorjs',
-  placeholder: 'Você pode escrever ou escolher um bloco...',
+  placeholder: 'Comece a escrever ou escolha um bloco...',
 
   tools: {
     header: {
@@ -127,13 +127,12 @@ const editor = new EditorJS({
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <div className="topbar">
         <div className="left">Editor</div>
-        <div className="center"></div>
         <div className="right">
-          <a href="#"><i className="far fa-save"></i> Salvar |</a>
-          <a href="#"> Publicar <i className="far fa-paper-plane"></i></a>
+          <a href="#"><i className="fas fa-cloud"></i> Salvar |</a>
+          <a href="#"> Publicar <i className="fas fa-paper-plane"></i></a>
         </div>
       </div>
 
