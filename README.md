@@ -1,4 +1,6 @@
-## Editor de Texto Online
+## Editor de Texto 
+
+Uma versão online para verificar seu funcionamento pode ser vista pela página do [Github Pages relativa ao projeto](https://taylorho.github.io/editor-de-texto).
 
 É contruído com [ReactJS](https://reactjs.org/) para que seja possível criar uma **build de produção**.
 Desse modo, é só rodar o comando ***yarn build*** para gerar o editor, e usá-lo em serviores de conteúdo estático (facilita a integração com servidores Apache e uso com o PHP).

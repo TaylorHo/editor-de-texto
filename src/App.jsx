@@ -127,7 +127,7 @@ const editor = new EditorJS({
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <div className="topbar">
         <div className="left">Editor</div>
         <div className="right">
